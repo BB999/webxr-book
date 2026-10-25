@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- ページの小さなアイコン（立方体） -->
+  <path d="M16 3 28 9.5 16 16 4 9.5Z" fill="#7cc0f5"/>
+  <path d="M4 9.5 16 16v13L4 22.5Z" fill="#3a8fd8"/>
+  <path d="M28 9.5 16 16v13l12-6.5Z" fill="#2a6aa3"/>
+</svg>
