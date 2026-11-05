@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bonus Page | WebXR for Stray Cats</title>
+<meta name="description" content="The bonus page for WebXR for Stray Cats, with bonus downloads and the Sample Gallery.">
+<!-- 英語版の特典のページ（https://bb999.github.io/webxr-book/en/）。題名は仮。samples/tools/make-site.sh が日本語版といっしょに組んで公開する -->
+<style>
+  :root { --ink: #3a302a; --sub: #6d625a; --paper: #f8f3e8; --card: #fffdf8; --line: #ddd2c2; --accent: #8e7cc3; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; line-height: 1.7; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  .book { margin: 0; color: var(--sub); }
+  h1 { margin: 0 0 8px; font-size: 1.8rem; }
+  h2 { margin: 40px 0 12px; padding-left: 12px; border-left: 6px solid var(--accent); font-size: 1.3rem; }
+  .works { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  .works a { display: block; overflow: hidden; background: var(--card); border: 1px solid var(--line); border-top: 6px solid var(--ch); border-radius: 12px; color: inherit; text-decoration: none; }
+  .works a:hover, .works a:focus-visible { border-color: var(--ch); }
+  .works img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--pale); }
+  .name { display: block; padding: 10px 16px 14px; }
+  .ch { display: inline-block; padding: 0 10px; border-radius: 999px; background: var(--pale); font-size: 0.85rem; font-weight: bold; }
+  .kind { margin-left: 8px; font-size: 0.85rem; font-weight: bold; color: var(--sub); }
+  .works b { display: block; margin-top: 6px; font-size: 1.05rem; }
+  .download { display: inline-block; padding: 12px 24px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: bold; text-decoration: none; }
+  .note, .empty { color: var(--sub); }
+  footer { margin-top: 48px; color: var(--sub); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="book">WebXR for Stray Cats</p>
+    <h1>Bonus Page</h1>
+    <p>Here you'll find the book's bonus downloads and the Sample Gallery.</p>
+  </header>
+
+  <section>
+    <h2>Bonus Downloads</h2>
+    <p>One zip file contains the template, each chapter's starting point and finished version, the 3D model of Nekobi, and the prompt collection. Download it on your Mac.</p>
+    <p><a class="download" href="../webxr-book-bonus.zip" download>Download the bonus files (zip)</a></p>
+    <p>Double-click the zip to open it. Copy the folders to anywhere you like on your Mac, then move to them in Terminal to use them. See Chapter 1 and Chapter 3 (3-1) of the book for details.</p>
+  </section>
+
+  <section>
+    <h2>Sample Gallery</h2>
+    <p>These are the four projects you'll build in this book. Open this page in the Quest browser, choose a project, and press the Play in VR or Play in MR button.</p>
+    <ul class="works">
+      <li><a href="../ch03/" style="--ch: #a67fbf; --pale: #efe5f4"><img src="../img/ch03.jpg" alt="A planet and its moon float in dark space" loading="lazy"><span class="name"><span class="ch">Chapter 3</span><span class="kind">VR</span><b>A Planet in Space</b></span></a></li>
+      <li><a href="../ch04/" style="--ch: #e0a040; --pale: #f8ecd6"><img src="../img/ch04.jpg" alt="Balloons float over a green field under a blue sky" loading="lazy"><span class="name"><span class="ch">Chapter 4</span><span class="kind">VR</span><b>Balloon Pop</b></span></a></li>
+      <li><a href="../ch05/" style="--ch: #5fb3a1; --pale: #dff0ec"><img src="../img/ch05.jpg" alt="A 3D Nekobi sits on a desk in a room" loading="lazy"><span class="name"><span class="ch">Chapter 5</span><span class="kind">MR</span><b>Nekobi in Your Room</b></span></a></li>
+      <li><a href="../ch06/" style="--ch: #d97a9a; --pale: #f6e1e8"><img src="../img/ch06.jpg" alt="A target on a wall, with a red ball in front of it" loading="lazy"><span class="name"><span class="ch">Chapter 6</span><span class="kind">MR</span><b>Ball Play in Your Room</b></span></a></li>
+    </ul>
+    <p class="note">The projects in Chapters 5 and 6 can use your floor, desk, and walls once you've finished the Quest's Space Setup.</p>
+  </section>
+
+  <footer>Noranekobi</footer>
+</main>
+</body>
+</html>
